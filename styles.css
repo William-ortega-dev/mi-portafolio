@@ -1,0 +1,85 @@
+
+:root {
+    --fondo: #faf9fc;
+    --texto: #24212b;
+    --acento: #8056a8;
+    --blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--acento);
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px 12%;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    margin: 8px 0;
+}
+
+.hero h2 {
+    color: var(--acento);
+    margin: 0;
+}
+
+.etiqueta {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.boton {
+    display: inline-block;
+    background: var(--acento);
+    color: var(--blanco);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+#proyectos,
+#contacto {
+    padding: 60px 12%;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+}
